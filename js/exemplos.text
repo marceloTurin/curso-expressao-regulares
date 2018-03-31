@@ -1,0 +1,23 @@
+No mundo de regex, um número é representado pelo \d.
+
+\d = 1 digito
+\{3} = 3 digito
+\. = 1 ponto
+\d{3}\. = 3 digito e um ponto
+
+
+CPF: 987.654.321-00
+CPF no regex: \d{3}\.\d{3}\.\d{3}\-\d{2}
+
+CNPJ: 15.123.321/8883-22
+CNPJ no regex: \d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}
+
+
+IP: 126.1.112.34
+IP no regex: \d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3} = cada \d delimitado de um a 3
+
+CEP: 20040-030
+CEP no Regex: \d{5}-\d{3}
+
+Número Telefonico: (21) 3216-2345
+Número Telefonico no Regex: \(\d{2}\) \d{4}-{4}
