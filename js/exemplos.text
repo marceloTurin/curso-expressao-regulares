@@ -21,3 +21,16 @@ CEP no Regex: \d{5}-\d{3}
 
 Número Telefonico: (21) 3216-2345
 Número Telefonico no Regex: \(\d{2}\) \d{4}-{4}
+
+-----Aula 2 Classes de Caracteres-----
+
+CPF: 987.654.321-00 ou 987.654.321.00
+CPF no Regex: \d{3}[.-]?\d{3}[.-]?\d{3}[.-]?\d{2}
+
+[-.] = Classe de caractere declarada com hifen e ponto.
+? = Significa que um caractere pode aparecer zero ou uma vez.
+Exemplo: <code> ou </code> = </?code> 
+
+[0123456789] = mesma coisa que \d
+[0-9] = mesma coisaque \d
+
